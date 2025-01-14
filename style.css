@@ -1,0 +1,100 @@
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffc0cb; /* Светло-розовый цвет */
+            color: #000; /* Черный цвет шрифта */
+        }
+        .header .logo {
+            font-size: 24px;
+            margin-right: auto; /* Перемещает логотип влево */
+        }
+        .nav-container {
+            background-color: #ffc0cb; /* Светло-розовый цвет */
+            padding: 10px 0;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+            margin-left: auto; /* Перемещает кнопки вправо */
+        }
+        .nav a {
+            color: #000; /* Черный цвет шрифта */
+            text-decoration: none;
+        }
+        .banner {
+            background-image: url('kettlebell-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 100px 20px;
+            color: #000; /* Черный цвет шрифта */
+        }
+        .banner img {
+            width: 50%;
+            height: auto;
+            margin-right: 20px;
+        }
+        .banner .text {
+            width: 50%;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .content .item {
+            width: 45%;
+            margin: 10px 0;
+            padding: 20px;
+            background-color: #ececec;
+            text-align: center;
+        }
+        .content .item img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .footer {
+            padding: 20px;
+            background-color: #ffc0cb; /* Светло-розовый цвет */
+            color: #000; /* Черный цвет шрифта */
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer .column {
+            width: 45%;
+        }
+        @media (max-width: 600px) {
+            .content .item {
+                width: 100%;
+            }
+            .banner {
+                flex-direction: column;
+                text-align: center;
+            }
+            .banner img {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .footer {
+                flex-direction: column;
+                align-items: center;
+            }
+            .footer .column {
+                width: 100%;
+                text-align: center;
+            }
+        }
